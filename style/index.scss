@@ -113,12 +113,16 @@
         width: 100%;
         border-bottom: 1px solid $preto;
       }
+
+      h3 {
+        width: 100%;
+      }
     }
 
     &_info {
       width: 40%;
 
-      @include flex(center, flex-start, column);
+      @include flex(center, center, column);
       gap: 80px;
 
       &_texto {
@@ -134,8 +138,8 @@
 
       img {
         border-radius: 5px;
-        width: 50%;
-        aspect-ratio: 4/5;
+        width: calc(50% - 5px);
+        aspect-ratio: 6/7;
         object-fit: cover;
       }
     }
@@ -143,7 +147,7 @@
     .splide__pagination {
       bottom: -100px;
       @include flex(center, center);
-      gap: 55px;
+      gap: 35px;
 
       &__page {
         width: 110px;

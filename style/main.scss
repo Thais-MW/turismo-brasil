@@ -28,29 +28,19 @@ a {
 
 .titulo-padrao {
   @include font(600, 40px, normal, $fonte-destaque);
-
-  @media #{$mq-desktop} {
-    font-size: 2vw;
-  }
 }
 
 .subtitulo-padrao {
   @include font(300, 28px, normal);
   margin-top: -5px;
   margin-bottom: 15px;
-
-  @media #{$mq-desktop} {
-    font-size: 1.45vw;
-  }
 }
 
 p {
+  margin-bottom: 10px;
+
   @include font(400, 18px, normal);
   text-align: justify;
-
-  @media #{$mq-desktop} {
-    font-size: 0.9vw;
-  }
 }
 
 .button {

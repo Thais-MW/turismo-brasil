@@ -34,11 +34,6 @@ a {
   color: "Josefin Sans", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
 }
-@media (max-width: 1920px) {
-  .titulo-padrao {
-    font-size: 2vw;
-  }
-}
 
 .subtitulo-padrao {
   font-family: "Source Sans Pro", sans-serif;
@@ -50,13 +45,9 @@ a {
   margin-top: -5px;
   margin-bottom: 15px;
 }
-@media (max-width: 1920px) {
-  .subtitulo-padrao {
-    font-size: 1.45vw;
-  }
-}
 
 p {
+  margin-bottom: 10px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -64,11 +55,6 @@ p {
   color: #000;
   font-family: "Source Sans Pro", sans-serif;
   text-align: justify;
-}
-@media (max-width: 1920px) {
-  p {
-    font-size: 0.9vw;
-  }
 }
 
 .button {
@@ -326,10 +312,13 @@ p {
   width: 100%;
   border-bottom: 1px solid #000;
 }
+.home__regioes_item h3 {
+  width: 100%;
+}
 .home__regioes_info {
   width: 40%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -353,8 +342,8 @@ p {
 }
 .home__regioes_img img {
   border-radius: 5px;
-  width: 50%;
-  aspect-ratio: 4/5;
+  width: calc(50% - 5px);
+  aspect-ratio: 6/7;
   object-fit: cover;
 }
 .home__regioes .splide__pagination {
@@ -364,7 +353,7 @@ p {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 55px;
+  gap: 35px;
 }
 .home__regioes .splide__pagination__page {
   width: 110px;
