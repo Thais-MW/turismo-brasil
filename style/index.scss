@@ -97,4 +97,64 @@
       }
     }
   }
+
+  &__regioes {
+    width: 100%;
+
+    &_carrossel {
+      width: 100%;
+    }
+
+    &_item {
+      @include flex(space-between, center);
+      gap: 32px;
+
+      h2 {
+        width: 100%;
+        border-bottom: 1px solid $preto;
+      }
+    }
+
+    &_info {
+      width: 40%;
+
+      @include flex(center, flex-start, column);
+      gap: 80px;
+
+      &_texto {
+        @include text-overflow(6);
+      }
+    }
+
+    &_img {
+      width: 60%;
+
+      @include flex(center, flex-start);
+      gap: 10px;
+
+      img {
+        border-radius: 5px;
+        width: 50%;
+        aspect-ratio: 4/5;
+        object-fit: cover;
+      }
+    }
+
+    .splide__pagination {
+      bottom: -100px;
+      @include flex(center, center);
+      gap: 55px;
+
+      &__page {
+        width: 110px;
+        height: 10px;
+        border-radius: 10px;
+
+        &.is-active {
+          transform: none;
+          background-color: $preto;
+        }
+      }
+    }
+  }
 }

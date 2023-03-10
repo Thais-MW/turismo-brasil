@@ -1,3 +1,4 @@
+// adiciona partials ao código
 $(function () {
   var includes = $("[data-include]");
   $.each(includes, function () {
