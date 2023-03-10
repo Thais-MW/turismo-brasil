@@ -5,3 +5,27 @@
   flex-direction: $direction;
   flex-wrap: $wrap;
 }
+
+@mixin font(
+  $font-weight: 400,
+  $font-size: $font-size-padrao,
+  $line-height: $font-size,
+  $color: $preto,
+  $font-family: $fonte-principal,
+  $font-style: normal
+) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-family: $font-family;
+}
+
+@mixin text-overflow($linhas, $orientacao: vertical) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $linhas;
+  -webkit-box-orient: $orientacao;
+}

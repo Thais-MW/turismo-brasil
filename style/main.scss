@@ -21,8 +21,59 @@ a {
   width: 100%;
   max-width: 1920px;
   padding: 0 55px;
+  margin: 0 auto;
+
+  @include flex(center, center);
+}
+
+.titulo-padrao {
+  @include font(600, 40px, normal, $fonte-destaque);
+
+  @media #{$mq-desktop} {
+    font-size: 2vw;
+  }
+}
+
+.subtitulo-padrao {
+  @include font(300, 28px, normal);
+  margin-top: -5px;
+  margin-bottom: 15px;
+
+  @media #{$mq-desktop} {
+    font-size: 1.45vw;
+  }
+}
+
+p {
+  @include font(400, 18px, normal);
+  text-align: justify;
+
+  @media #{$mq-desktop} {
+    font-size: 0.9vw;
+  }
+}
+
+.button {
+  background: $branco;
+  height: auto;
+  padding: 5px 10px;
+  border: 2px solid $preto;
+
+  @include font(700, 20px, normal);
+  text-align: center;
+  text-transform: lowercase;
+
+  &:hover,
+  &:active {
+    border-image-slice: 1;
+    border-image-source: linear-gradient($gradiente);
+  }
+
+  &:active {
+    border-width: 3px;
+  }
 }
 
 @import "header";
 
-@import "home";
+@import "index";

@@ -1,11 +1,17 @@
-$verde: #3f933d;
-$amarelo: #ded354;
-$azul: #0b6e60;
+$verde: #16b83e;
+$amarelo: #ffe11f;
+$azul: #1651b8;
 $branco: #fff;
 $preto: #000;
 
 $gradiente: 90deg, $azul 0%, $verde 50%, $amarelo 100%;
 
-$fonte-principal: "Lato", sans-serif;
-$fonte-destaque: "Raleway", sans-serif;
-$fonte-destaque2: "Patrick Hand SC", cursive; ;
+$fonte-principal: "Source Sans Pro", sans-serif;
+$fonte-destaque: "Josefin Sans", sans-serif;
+
+$font-size-padrao: 20px;
+
+$mq-mobile: "(max-width: 640px)";
+$mq-tablet: "(max-width: 1199px)";
+$mq-notebook: "(max-width: 1366px)";
+$mq-desktop: "(max-width: 1920px)";

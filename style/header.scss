@@ -3,33 +3,28 @@
   width: 100%;
   height: 80px;
   background: $branco;
+  box-shadow: 0px 20px 20px 20px #0000001f;
 
   .conteudo {
+    height: 100%;
     @include flex(space-between, center);
   }
 
   &__logo {
-    color: $verde;
-    background: -webkit-linear-gradient($gradiente);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: $fonte-destaque2;
-    font-size: 60px;
+    @include flex(center, center);
+    gap: 20px;
 
-    span {
-      position: absolute;
-      font-family: $fonte-principal;
-      font-weight: 300;
-      font-size: 20px;
-      margin-left: -80px;
-      top: 10px;
-      -webkit-text-fill-color: $verde;
+    h1 {
+      @include font(600, 30px, normal, $fonte-destaque);
+      text-transform: uppercase;
     }
+
+    @import "brasil-flag";
   }
 
   &__menu {
     i {
-      color: $verde;
+      color: $preto;
       font-size: 40px;
     }
   }
