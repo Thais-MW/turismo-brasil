@@ -19,11 +19,16 @@ a {
 
 .conteudo {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1700px;
   padding: 0 55px;
   margin: 0 auto;
 
   @include flex(center, center);
+
+  @media #{$mq-mobile} {
+    padding: 0 20px;
+    flex-direction: column;
+  }
 }
 
 .titulo-padrao {
@@ -34,6 +39,10 @@ a {
   @include font(300, 28px, normal);
   margin-top: -5px;
   margin-bottom: 15px;
+
+  @media #{$mq-mobile} {
+    font-size: 26px;
+  }
 }
 
 p {
@@ -65,5 +74,6 @@ p {
 }
 
 @import "header";
+@import "footer";
 
 @import "index";

@@ -23,6 +23,7 @@
       width: 100%;
       @include flex(center, center, column);
 
+
       h2,
       h3 {
         width: 100%;
@@ -47,8 +48,8 @@
         object-fit: cover;
         border-radius: 5px;
 
-        @media #{$mq-desktop} {
-          max-height: 26vw;
+        @media #{$mq-mobile} {
+          max-height: 200px;
         }
       }
     }
