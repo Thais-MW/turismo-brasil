@@ -16,3 +16,6 @@ Foi-se necessário o uso diferentes tecnologias:
     * Gráficos JS - [Chart.js](https://www.chartjs.org/)
   * API .json - [Fixer API](https://fixer.io/)
 
+Wireframe
+=========
+[Figma](https://www.figma.com/file/PzD0miiW5IlFkIys5J5wbC/Untitled?node-id=0%3A1&t=JkiMabJNytPGO8Ab-1)
