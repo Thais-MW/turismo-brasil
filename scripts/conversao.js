@@ -27,7 +27,7 @@ export async function exibirDisponiveis() {
 
   for (const moeda in result.symbols) {
     select.options[select.options.length] = new Option(
-      result.symbols[moeda],
+      `${moeda} - ${result.symbols[moeda]}`,
       moeda
     );
   }

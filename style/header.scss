@@ -1,19 +1,59 @@
-.header {
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  background: $branco;
-  box-shadow: 0px 20px 20px 20px #0000001f;
-  z-index: 9;
+$altura-header: 80px;
 
-  // &::before {
-  //   position: absolute;
-  //   bottom: 0;
-  //   content: "";
-  //   width: 100%;
-  //   height: 1px;
-  //   background: linear-gradient($gradiente);
-  // }
+.header {
+  &__topo {
+    position: fixed;
+    width: 100%;
+    height: $altura-header;
+    background: $branco;
+    z-index: 9;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &__menu {
+    position: fixed;
+    width: 100%;
+    top: $altura-header;
+    background: $azul-escuro;
+    z-index: 9;
+    transition: top 0.2s ease-in-out;
+
+    nav {
+      width: 100%;
+      @include flex(space-between, center);
+
+      .button {
+        text-transform: none;
+        border-color: $azul;
+      }
+    }
+
+    ul {
+      @include flex(flex-start, center);
+      gap: 10px;
+
+      li {
+        color: $branco;
+        font-family: $fonte-destaque;
+        padding: 15px;
+        border: 2px solid transparent;
+
+        &:hover,
+        &:active,
+        &.active {
+          background-color: #ffffff1f;
+          border-top: $verde solid 2px;
+        }
+
+        a {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  box-shadow: 0px 20px 20px 20px #0000001f;
 
   .conteudo {
     height: 100%;
@@ -37,5 +77,15 @@
       color: $preto;
       font-size: 40px;
     }
+  }
+}
+
+.header-up {
+  .header__topo {
+    transform: translateY(-100%);
+  }
+
+  .header__menu {
+    top: 0;
   }
 }

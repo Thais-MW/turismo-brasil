@@ -306,22 +306,43 @@
       </div>
     </section>
 
-    <section>
-      <select id="moedasDisponiveis"></select>
-      <input id="valorMoeda" type="number" min="0.00" step="0.01" />
-      <button id="botaoConversao" class="button">converter</button>
-      <div id="resultado"></div>
+    <section class="modal_conversao">
+      <div class="conteudo">
+        <h2 class="titulo-padrao">
+          Escolha a moeda que usa e veja a conversão para o real
+        </h2>
+        <div class="modal_conversao__form">
+          <select id="moedasDisponiveis"></select>
+          <input
+            id="valorMoeda"
+            type="number"
+            min="0.00"
+            step="0.01"
+            placeholder="Informe o valor"
+          />
+          <button id="botaoConversao" class="button">converter</button>
+        </div>
+        <div id="resultado"></div>
+        <canvas id="grafico"></canvas>
+      </div>
+      <div class="modal_conversao__img">
+        <img
+          src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        />
+      </div>
+      <div class="close-modal">
+        <i class="material-symbols-outlined"> close </i>
+      </div>
     </section>
 
-    <section>
-      <canvas id="grafico"></canvas>
-    </section>
+    <!-- <section class="modal_conversao" data-include="conversao"></section> -->
 
     <footer data-include="footer" class="footer"></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/scripts/partials.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/lib/splide.min.js"></script>
-    <script src="/scripts/main.js" type="module"></script>
     <script src="scripts/sliders-config.js"></script>
+    <script src="/scripts/main.js" type="module"></script>
   </body>
 </html>
