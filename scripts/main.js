@@ -20,6 +20,10 @@ $(window).on("load", function () {
   $(".culinaria__conteudo_regioes_item").on("click", function () {
     $(this).find(".culinaria__conteudo_regioes_item_texto").slideToggle();
   });
+
+  $(".cultura__conteudo_manifestacoes_item").on("click", function () {
+    $(this).find(".cultura__conteudo_manifestacoes_item_texto").slideToggle();
+  });
 });
 
 // esconde header ao rolar a página

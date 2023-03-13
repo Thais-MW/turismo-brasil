@@ -537,6 +537,61 @@ p {
   min-height: 40px;
 }
 
+.cultura__banner {
+  padding-top: 130px;
+  width: 100%;
+}
+.cultura__banner img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1920/400;
+  object-fit: cover;
+}
+.cultura__conteudo {
+  margin-top: 140px;
+}
+.cultura__conteudo .conteudo {
+  flex-direction: column;
+}
+.cultura__conteudo .conteudo h2 {
+  margin-bottom: 50px;
+}
+.cultura__conteudo .conteudo p {
+  width: 100%;
+  text-align: justify;
+}
+.cultura__conteudo_manifestacoes {
+  margin: 50px 0;
+  width: 1000px;
+}
+.cultura__conteudo_manifestacoes_item {
+  margin: 20px 0;
+  border-radius: 0 0 10px;
+}
+.cultura__conteudo_manifestacoes_item h3 {
+  color: #fff;
+  font-weight: 500;
+  background-color: #092e6e;
+  border-radius: 10px;
+  text-align: center;
+}
+.cultura__conteudo_manifestacoes_item_texto {
+  border: 1px solid #092e6e;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.cultura__conteudo_manifestacoes_item_texto img {
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
 .culinaria__banner {
   padding-top: 130px;
   width: 100%;
