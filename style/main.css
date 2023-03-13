@@ -75,6 +75,7 @@ p {
   height: auto;
   padding: 5px 10px;
   border: 2px solid #000;
+  border-radius: 5px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -85,8 +86,9 @@ p {
   text-transform: lowercase;
 }
 .button:hover, .button:active {
-  border-image-slice: 1;
-  border-image-source: linear-gradient(157deg, #1651b8 0%, #16b83e 50%, #ffe11f 100%);
+  background: #092e6e;
+  border-color: #092e6e;
+  color: #fff;
 }
 .button:active {
   border-width: 3px;
@@ -267,8 +269,10 @@ p {
   opacity: 0;
   height: 0;
   transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
 }
 .modal_conversao.active {
+  pointer-events: all;
   opacity: 1;
   position: fixed;
   height: 100vh;
@@ -342,6 +346,7 @@ p {
 }
 
 .footer {
+  margin-top: 100px;
   background-color: #092e6e;
   height: 100px;
 }
@@ -353,10 +358,25 @@ p {
   width: 100%;
   height: 100%;
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 .home__video iframe {
   width: 100%;
   aspect-ratio: 560/315;
+  z-index: 1;
+}
+.home__video_efeito {
+  z-index: 2;
+  position: relative;
+  margin-top: -400px;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgb(255, 255, 255) 80%);
+}
+.home__introducao {
+  margin-top: 0 !important;
 }
 .home__introducao .conteudo {
   gap: 50px;
@@ -511,6 +531,62 @@ p {
 .home__regioes .splide__pagination__page.is-active {
   transform: none;
   background-color: #000;
+}
+.home__intoducao .button, .home__destaque .button, .home__regioes .button {
+  min-width: 310px;
+  min-height: 40px;
+}
+
+.culinaria__banner {
+  padding-top: 130px;
+  width: 100%;
+}
+.culinaria__banner img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1920/400;
+  object-fit: cover;
+}
+.culinaria__conteudo {
+  margin-top: 140px;
+}
+.culinaria__conteudo .conteudo {
+  flex-direction: column;
+}
+.culinaria__conteudo .conteudo h2 {
+  margin-bottom: 50px;
+}
+.culinaria__conteudo .conteudo p {
+  width: 100%;
+  text-align: justify;
+}
+.culinaria__conteudo_regioes {
+  margin: 50px 0;
+  width: 1000px;
+}
+.culinaria__conteudo_regioes_item {
+  margin: 20px 0;
+  border-radius: 0 0 10px;
+}
+.culinaria__conteudo_regioes_item h3 {
+  color: #fff;
+  font-weight: 500;
+  background-color: #092e6e;
+  border-radius: 10px;
+  text-align: center;
+}
+.culinaria__conteudo_regioes_item_texto {
+  border: 1px solid #092e6e;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.culinaria__conteudo_regioes_item_texto .button {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -60,6 +60,7 @@ p {
   height: auto;
   padding: 5px 10px;
   border: 2px solid $preto;
+  border-radius: 5px;
 
   @include font(700, 20px, normal);
   text-align: center;
@@ -67,8 +68,10 @@ p {
 
   &:hover,
   &:active {
-    border-image-slice: 1;
-    border-image-source: linear-gradient($gradiente);
+    // border-image-slice: 1;
+    background: $azul-escuro;
+    border-color: $azul-escuro;
+    color: $branco;
   }
 
   &:active {
@@ -81,3 +84,4 @@ p {
 @import "footer";
 
 @import "index";
+@import "culinaria";

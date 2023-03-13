@@ -1,23 +1,10 @@
 import { converter, exibirDisponiveis, historico } from "./conversao.js";
 
-// function adicionaPartials() {
-//   var includes = $("[data-include]");
-
-//   $.each(includes, function () {
-//     var file = "partials/" + $(this).data("include") + ".html";
-//     $(this).load(file);
-//   });
-// }
-
 function adicionaMenuAtivo() {
   let pagina = $("body").attr("class");
   pagina = "#" + pagina;
   $(".header__menu").find(pagina).addClass("active");
 }
-
-// $(function () {
-//   adicionaPartials();
-// });
 
 $(window).on("load", function () {
   adicionaMenuAtivo();
@@ -28,6 +15,10 @@ $(window).on("load", function () {
 
   $(".close-modal").on("click", function () {
     $(".modal_conversao").removeClass("active");
+  });
+
+  $(".culinaria__conteudo_regioes_item").on("click", function () {
+    $(this).find(".culinaria__conteudo_regioes_item_texto").slideToggle();
   });
 });
 
