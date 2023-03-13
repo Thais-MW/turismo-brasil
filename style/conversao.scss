@@ -17,6 +17,10 @@
     transition: opacity 0.5s ease-in-out;
 
     @include flex(center, center);
+
+    @media #{$mq-mobile} {
+      flex-direction: column;
+    }
   }
 
   .conteudo {
