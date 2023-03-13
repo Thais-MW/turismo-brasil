@@ -1,5 +1,6 @@
 Turismo-Brasil
 =========
+[Visualizar Projeto](https://thais-mw.github.io/turismo-brasil)
 
 Projeto desenvolvido para demonstração de proeficiência em Fundamentos da WEB.
 
@@ -10,11 +11,12 @@ Tecnologias
 
 Foi-se necessário o uso diferentes tecnologias:
 
-  * CSS - [SASS](https://sass-lang.com/)
-  * JavaScript - [jQuery](https://sass-lang.com/)
+  * Estruturação - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * Estilização - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) e [SASS](https://sass-lang.com/)
+  * Programação - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) e [jQuery](https://sass-lang.com/)
     * Carrossel JS - [Splide](https://splidejs.com/)
     * Gráficos JS - [Chart.js](https://www.chartjs.org/)
-  * API .json - [Fixer API](https://fixer.io/)
+  * API - [Fixer API](https://fixer.io/)
 
 Wireframe
 =========
