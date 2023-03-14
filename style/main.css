@@ -110,17 +110,23 @@ p {
   z-index: 10;
   transition: transform 0.2s ease-in-out;
 }
+@media (max-width: 768px) {
+  .header__topo {
+    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.1215686275);
+  }
+}
 .header__menu {
   position: fixed;
   width: 100%;
   top: 80px;
   background: #092e6e;
-  z-index: 9;
+  z-index: 10;
   transition: top 0.2s ease-in-out;
 }
 @media (max-width: 768px) {
   .header__menu {
     display: none;
+    z-index: 9;
     width: 100vw;
     height: 100vh;
     transition: opacity 0.2s ease-in-out;
@@ -707,14 +713,29 @@ p {
   padding-top: 130px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .cultura__banner {
+    padding-top: 75px;
+  }
+}
 .cultura__banner img {
   width: 100%;
   height: 100%;
   aspect-ratio: 1920/400;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .cultura__banner img {
+    aspect-ratio: 5/4;
+  }
+}
 .cultura__conteudo {
   margin-top: 140px;
+}
+@media (max-width: 768px) {
+  .cultura__conteudo {
+    margin-top: 70px;
+  }
 }
 .cultura__conteudo .conteudo {
   flex-direction: column;
@@ -729,6 +750,11 @@ p {
 .cultura__conteudo_manifestacoes {
   margin: 50px 0;
   width: 1000px;
+}
+@media (max-width: 768px) {
+  .cultura__conteudo_manifestacoes {
+    width: 100%;
+  }
 }
 .cultura__conteudo_manifestacoes_item {
   margin: 20px 0;
@@ -752,15 +778,30 @@ p {
   flex-wrap: nowrap;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .cultura__conteudo_manifestacoes_item_texto {
+    flex-direction: column;
+  }
+}
 .cultura__conteudo_manifestacoes_item_texto img {
   width: 50%;
   border-radius: 10px;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .cultura__conteudo_manifestacoes_item_texto img {
+    width: 100%;
+  }
+}
 
 .culinaria__banner {
   padding-top: 130px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .culinaria__banner {
+    padding-top: 75px;
+  }
 }
 .culinaria__banner img {
   width: 100%;
@@ -768,8 +809,18 @@ p {
   aspect-ratio: 1920/400;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .culinaria__banner img {
+    aspect-ratio: 5/4;
+  }
+}
 .culinaria__conteudo {
   margin-top: 140px;
+}
+@media (max-width: 768px) {
+  .culinaria__conteudo {
+    margin-top: 70px;
+  }
 }
 .culinaria__conteudo .conteudo {
   flex-direction: column;
@@ -784,6 +835,11 @@ p {
 .culinaria__conteudo_regioes {
   margin: 50px 0;
   width: 1000px;
+}
+@media (max-width: 768px) {
+  .culinaria__conteudo_regioes {
+    width: 100%;
+  }
 }
 .culinaria__conteudo_regioes_item {
   margin: 20px 0;

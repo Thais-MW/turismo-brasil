@@ -3,16 +3,28 @@
     padding-top: 130px;
     width: 100%;
 
+    @media #{$mq-mobile} {
+      padding-top: 75px;
+    }
+
     img {
       width: 100%;
       height: 100%;
       aspect-ratio: 1920/400;
       object-fit: cover;
+
+      @media #{$mq-mobile} {
+        aspect-ratio: 5/4;
+      }
     }
   }
 
   &__conteudo {
     margin-top: 140px;
+
+    @media #{$mq-mobile} {
+      margin-top: 70px;
+    }
 
     .conteudo {
       flex-direction: column;
@@ -30,6 +42,10 @@
     &_regioes {
       margin: 50px 0;
       width: 1000px;
+
+      @media #{$mq-mobile} {
+        width: 100%;
+      }
 
       &_item {
         margin: 20px 0;
