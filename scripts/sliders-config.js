@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "fade",
     perPage: 1,
     gap: 50,
+    breakpoints: {
+      640: {
+        gap: 15,
+      },
+    },
   };
 
   const regioes = document.querySelector(".home__regioes_carrossel");

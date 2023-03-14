@@ -1,19 +1,21 @@
 .modal_conversao {
   opacity: 0;
-  height: 0;
+  // height: 0;
+  display: none;
   transition: opacity 0.5s ease-in-out;
   pointer-events: none;
 
   &.active {
-    pointer-events: all;
-    opacity: 1;
     position: fixed;
+    opacity: 1;
+    display: inherit;
+    pointer-events: all;
     height: 100vh;
     width: 100%;
     top: 0;
     margin: 0 !important;
     z-index: 10;
-    background: rgb(3, 129, 162);
+    background: $azul2;
     transition: opacity 0.5s ease-in-out;
 
     @include flex(center, center);
@@ -29,6 +31,10 @@
     width: 40%;
     flex-direction: column;
     gap: 50px;
+
+    @media #{$mq-mobile} {
+      width: 100%;
+    }
 
     .titulo-padrao {
       font-size: 36px;
@@ -50,23 +56,45 @@
   &__form {
     width: 100%;
 
-    @include flex(center, center, row);
+    @include flex(center, center);
     gap: 10px;
+
+    @media #{$mq-mobile} {
+      flex-direction: column;
+    }
 
     select,
     input {
-      // width: calc(50% - 5px);
       height: 40px;
       border: none;
       border-radius: 5px;
       padding: 10px;
       text-align: center;
+
+      @media #{$mq-mobile} {
+        width: 100%;
+      }
     }
+
+    .button {
+      @media #{$mq-mobile} {
+        width: 100%;
+      }
+    }
+  }
+
+  #resultado {
+    color: $branco;
+    font-size: 26px;
   }
 
   &__img {
     width: 100%;
     height: 100%;
+
+    @media #{$mq-mobile} {
+      display: none;
+    }
 
     img {
       width: 100%;
@@ -84,6 +112,10 @@
 
     i {
       font-size: 60px;
+
+      @media #{$mq-mobile} {
+        font-size: 40px;
+      }
     }
   }
 }

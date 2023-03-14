@@ -18,6 +18,11 @@ a {
   text-decoration: inherit;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 @import "mixins";
 
 .conteudo {
@@ -69,8 +74,8 @@ p {
   &:hover,
   &:active {
     // border-image-slice: 1;
-    background: $azul-escuro;
-    border-color: $azul-escuro;
+    background: $azul2;
+    border-color: $azul2;
     color: $branco;
   }
 

@@ -6,8 +6,20 @@ function adicionaMenuAtivo() {
   $(".header__menu").find(pagina).addClass("active");
 }
 
+function isMobile() {
+  if ($(window).width() < 768) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 $(window).on("load", function () {
   adicionaMenuAtivo();
+
+  $(".header__menu-mobile").on("click", function () {
+    $(".header__menu").slideToggle();
+  });
 
   $("#botaoModalConversao").on("click", function () {
     $(".modal_conversao").addClass("active");
@@ -28,13 +40,18 @@ $(window).on("load", function () {
 
 // esconde header ao rolar a página
 let prevScrollpos = $(window).scrollTop();
+
 $(window).scroll(function () {
   const currentScrollPos = $(window).scrollTop();
-  if (prevScrollpos > currentScrollPos) {
-    $(".header").removeClass("header-up");
-  } else {
-    $(".header").addClass("header-up");
+
+  if (!isMobile()) {
+    const checkScrollDirection = (prevScrollPos, currentScrollPos) => {
+      prevScrollPos > currentScrollPos
+        ? $(".header").removeClass("header-up")
+        : $(".header").addClass("header-up");
+    };
   }
+
   prevScrollpos = currentScrollPos;
 });
 
