@@ -83,7 +83,9 @@ $altura-header: 80px;
     }
 
     &_conversao {
-      width: 100%;
+      @media #{$mq-mobile} {
+        width: 100%;
+      }
 
       .button {
         text-transform: none;

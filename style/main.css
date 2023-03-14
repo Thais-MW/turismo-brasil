@@ -187,8 +187,10 @@ p {
   height: 100%;
   width: 100%;
 }
-.header__menu_conversao {
-  width: 100%;
+@media (max-width: 768px) {
+  .header__menu_conversao {
+    width: 100%;
+  }
 }
 .header__menu_conversao .button {
   text-transform: none;
@@ -864,6 +866,56 @@ p {
 }
 .culinaria__conteudo_regioes_item_texto .button {
   margin-top: 50px;
+}
+
+.pontos-turisticos__conteudo {
+  padding-top: 180px;
+}
+@media (max-width: 768px) {
+  .pontos-turisticos__conteudo {
+    padding-top: 170px;
+  }
+}
+.pontos-turisticos__conteudo .subtitulo-padrao {
+  margin-top: 100px;
+  font-weight: 500;
+  text-align: center;
+}
+.pontos-turisticos__conteudo .conteudo {
+  flex-direction: column;
+}
+.pontos-turisticos__conteudo .conteudo h2 {
+  margin-bottom: 50px;
+}
+.pontos-turisticos__conteudo .conteudo p {
+  width: 100%;
+  text-align: justify;
+}
+.pontos-turisticos__conteudo_images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .pontos-turisticos__conteudo_images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.pontos-turisticos__conteudo_image {
+  width: 100%;
+}
+.pontos-turisticos__conteudo_image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.pontos-turisticos__conteudo_image h4 {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
