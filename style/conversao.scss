@@ -29,11 +29,14 @@
     background-color: #ffffff2a;
     height: 100%;
     width: 40%;
+    min-width: 780px;
+
     flex-direction: column;
     gap: 50px;
 
     @media #{$mq-mobile} {
       width: 100%;
+      min-width: none;
     }
 
     .titulo-padrao {

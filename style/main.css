@@ -359,12 +359,14 @@ p {
   background-color: rgba(255, 255, 255, 0.1647058824);
   height: 100%;
   width: 40%;
+  min-width: 780px;
   flex-direction: column;
   gap: 50px;
 }
 @media (max-width: 768px) {
   .modal_conversao .conteudo {
     width: 100%;
+    min-width: none;
   }
 }
 .modal_conversao .conteudo .titulo-padrao {
