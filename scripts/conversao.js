@@ -34,8 +34,18 @@ export async function exibirDisponiveis() {
 }
 
 export async function historico(moedaOrigem) {
+  const date = new Date();
+  const anotherDate = new Date();
+
+  const daysToSubtract = 30;
+
+  anotherDate.setDate(date.getDate() - daysToSubtract);
+
+  const currentDate = date.toISOString().substr(0, 10);
+  const pastDate = anotherDate.toISOString().substr(0, 10);
+
   const response = await fetchBase(
-    `timeseries?start_date=2023-03-01&end_date=2023-03-12&base=${moedaOrigem}&symbols=BRL`
+    `timeseries?start_date=${pastDate}&end_date=${currentDate}&base=${moedaOrigem}&symbols=BRL`
   );
 
   const result = await response.json();

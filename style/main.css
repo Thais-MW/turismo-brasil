@@ -712,6 +712,11 @@ p {
   min-width: 310px;
   min-height: 40px;
 }
+@media (max-width: 768px) {
+  .home__intoducao .button, .home__destaque .button, .home__regioes .button {
+    min-width: none;
+  }
+}
 
 .cultura__banner {
   padding-top: 130px;

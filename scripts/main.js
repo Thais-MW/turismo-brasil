@@ -36,10 +36,18 @@ $(window).on("load", function () {
   $(".cultura__conteudo_manifestacoes_item").on("click", function () {
     $(this).find(".cultura__conteudo_manifestacoes_item_texto").slideToggle();
   });
+
+  // exibe resultado da requisão da API Fixer
+  exibirDisponiveis();
+});
+
+$(() => {
+  // exibe resultado da requisão da API Fixer
+  exibirDisponiveis();
 });
 
 // esconde header ao rolar a página
-let prevScrollpos = $(window).scrollTop();
+var prevScrollpos = $(window).scrollTop();
 
 $(window).scroll(function () {
   const currentScrollPos = $(window).scrollTop();

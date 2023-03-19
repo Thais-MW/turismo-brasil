@@ -247,6 +247,10 @@
     .button {
       min-width: 310px;
       min-height: 40px;
+
+      @media #{$mq-mobile} {
+        min-width: none;
+      }
     }
   }
 }
