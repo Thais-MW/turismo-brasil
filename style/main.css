@@ -366,7 +366,7 @@ p {
 @media (max-width: 768px) {
   .modal_conversao .conteudo {
     width: 100%;
-    min-width: none;
+    min-width: 0;
   }
 }
 .modal_conversao .conteudo .titulo-padrao {
@@ -714,7 +714,7 @@ p {
 }
 @media (max-width: 768px) {
   .home__intoducao .button, .home__destaque .button, .home__regioes .button {
-    min-width: none;
+    min-width: 0;
   }
 }
 

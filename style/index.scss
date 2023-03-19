@@ -249,7 +249,7 @@
       min-height: 40px;
 
       @media #{$mq-mobile} {
-        min-width: none;
+        min-width: 0;
       }
     }
   }
