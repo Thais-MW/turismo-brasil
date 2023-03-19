@@ -1,7 +1,7 @@
 const API_BASE = "https://api.apilayer.com/fixer";
 const fetchBase = async (url) =>
   await fetch(`${API_BASE}/${url}`, {
-    headers: { apikey: "kXDRUNZ4BN1OIOq1616khQdPzONTLKid" },
+    headers: { apikey: "RABusSzWZhYGY9vrv4naDlqBgNnngLdz" },
   });
 
 export async function converter(moedaOrigem, valor) {
